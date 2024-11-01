@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Beauty Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Beauty Finder</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="wishlist.html">Wishlist</a></li>
+            <li><a href="products.html">Products</a></li>
+        </ul>
+    </nav>
+</header>
+
+  <div class="banner">
+    <img src="maybelline.jpg">
+  </div>
+
+  <section id="search-section">
+    <label for="brand">Brand:</label>
+    <input type="text" id="brand" placeholder="Enter brand (e.g., maybelline)">
+
+    <label for="price">Max Price:</label>
+    <input type="number" id="price" placeholder="Enter max price">
+
+    <button id="search-btn">Find Products</button>
+  </section>
+
+  <section id="results-section">
+    <h2>Recommended Products</h2>
+    <div id="product-list"></div>
+  </section>
+  <script src="renderer.js"></script>
+</body>
+</html>
